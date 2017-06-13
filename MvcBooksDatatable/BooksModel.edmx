@@ -40,7 +40,7 @@
           <Property Name="Country" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
         </EntityType>
         <EntityContainer Name="BooksDatabaseEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="BooksTable" EntityType="Self.BooksTable" />
+          <EntitySet Name="BooksTables" EntityType="Self.BooksTable" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
@@ -48,7 +48,7 @@
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
         <EntityContainerMapping StorageEntityContainer="Хранилище BooksDatabaseModelContainer" CdmEntityContainer="BooksDatabaseEntities">
-          <EntitySetMapping Name="BooksTable">
+          <EntitySetMapping Name="BooksTables">
             <EntityTypeMapping TypeName="BooksDatabaseModel.BooksTable">
               <MappingFragment StoreEntitySet="BooksTable">
                 <ScalarProperty Name="BookID" ColumnName="BookID" />

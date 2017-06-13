@@ -17,7 +17,7 @@ namespace MvcBooksDatatable.Controllers
         {
             using(BooksDatabaseEntities dc = new BooksDatabaseEntities())
             {
-                return Json(dc.BooksTable.ToList());
+                return Json(dc.BooksTables.ToList());
             }
         }
     }
