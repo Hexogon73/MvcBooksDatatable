@@ -25,6 +25,6 @@ namespace MvcBooksDatatable
             throw new UnintentionalCodeFirstException();
         }
     
-        public virtual DbSet<BooksTable> BooksTables { get; set; }
+        public virtual DbSet<BooksTable> BooksTable { get; set; }
     }
 }
